@@ -7,7 +7,7 @@ public static class EqualityHelper
 {
     private static readonly ConcurrentDictionary<(Type, string), FieldInfo> _fieldsRegisty = new();
 
-    // Added to solve temporarily the issue https://github.com/dotnet/aspnetcore/pull/53395
+    // Added to solve temporarily the issue https://github.com/dotnet/aspnetcore/issues/53361
     public static bool IsEqual(EventCallback callback, object obj)
     {
         if (obj is not EventCallback other)
