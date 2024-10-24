@@ -37,7 +37,7 @@ namespace BlazorBindings.Maui.Elements
                     ChildContent = (RenderFragment)value;
                     break;
                 case nameof(OnInvalidateGradientBrushRequested):
-                    if (!Equals(OnInvalidateGradientBrushRequested, value))
+                    if (!EqualityHelper.IsEqual(OnInvalidateGradientBrushRequested, value))
                     {
                         void NativeControlInvalidateGradientBrushRequested(object sender, EventArgs e) => InvokeEventCallback(OnInvalidateGradientBrushRequested);
 

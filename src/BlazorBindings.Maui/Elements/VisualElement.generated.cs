@@ -344,7 +344,7 @@ namespace BlazorBindings.Maui.Elements
                     Triggers = (RenderFragment)value;
                     break;
                 case nameof(OnChildrenReordered):
-                    if (!Equals(OnChildrenReordered, value))
+                    if (!EqualityHelper.IsEqual(OnChildrenReordered, value))
                     {
                         void NativeControlChildrenReordered(object sender, EventArgs e) => InvokeEventCallback(OnChildrenReordered);
 
@@ -354,7 +354,7 @@ namespace BlazorBindings.Maui.Elements
                     }
                     break;
                 case nameof(OnFocused):
-                    if (!Equals(OnFocused, value))
+                    if (!EqualityHelper.IsEqual(OnFocused, value))
                     {
                         void NativeControlFocused(object sender, MC.FocusEventArgs e) => InvokeEventCallback(OnFocused, e);
 
@@ -364,7 +364,7 @@ namespace BlazorBindings.Maui.Elements
                     }
                     break;
                 case nameof(OnMeasureInvalidated):
-                    if (!Equals(OnMeasureInvalidated, value))
+                    if (!EqualityHelper.IsEqual(OnMeasureInvalidated, value))
                     {
                         void NativeControlMeasureInvalidated(object sender, EventArgs e) => InvokeEventCallback(OnMeasureInvalidated);
 
@@ -374,7 +374,7 @@ namespace BlazorBindings.Maui.Elements
                     }
                     break;
                 case nameof(OnSizeChanged):
-                    if (!Equals(OnSizeChanged, value))
+                    if (!EqualityHelper.IsEqual(OnSizeChanged, value))
                     {
                         void NativeControlSizeChanged(object sender, EventArgs e) => InvokeEventCallback(OnSizeChanged);
 
@@ -384,7 +384,7 @@ namespace BlazorBindings.Maui.Elements
                     }
                     break;
                 case nameof(OnUnfocused):
-                    if (!Equals(OnUnfocused, value))
+                    if (!EqualityHelper.IsEqual(OnUnfocused, value))
                     {
                         void NativeControlUnfocused(object sender, MC.FocusEventArgs e) => InvokeEventCallback(OnUnfocused, e);
 
@@ -394,7 +394,7 @@ namespace BlazorBindings.Maui.Elements
                     }
                     break;
                 case nameof(OnLoaded):
-                    if (!Equals(OnLoaded, value))
+                    if (!EqualityHelper.IsEqual(OnLoaded, value))
                     {
                         void NativeControlLoaded(object sender, EventArgs e) => InvokeEventCallback(OnLoaded);
 
@@ -404,7 +404,7 @@ namespace BlazorBindings.Maui.Elements
                     }
                     break;
                 case nameof(OnUnloaded):
-                    if (!Equals(OnUnloaded, value))
+                    if (!EqualityHelper.IsEqual(OnUnloaded, value))
                     {
                         void NativeControlUnloaded(object sender, EventArgs e) => InvokeEventCallback(OnUnloaded);
 
