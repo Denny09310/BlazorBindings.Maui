@@ -6,3 +6,6 @@ global using System.Collections.Generic;
 global using System.Diagnostics.CodeAnalysis;
 global using System.Linq;
 global using System.Threading.Tasks;
+
+// This is a temporary fix
+global using BlazorBindings.Maui.Extensions;
