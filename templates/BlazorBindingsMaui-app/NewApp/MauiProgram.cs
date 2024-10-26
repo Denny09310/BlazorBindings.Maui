@@ -1,4 +1,6 @@
-﻿namespace NewApp;
+﻿using Microsoft.Extensions.Logging;
+
+namespace NewApp;
 
 public static class MauiProgram
 {
@@ -12,6 +14,10 @@ public static class MauiProgram
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
             });
+
+#if DEBUG
+        builder.Logging.AddDebug();
+#endif
 
         return builder.Build();
     }
