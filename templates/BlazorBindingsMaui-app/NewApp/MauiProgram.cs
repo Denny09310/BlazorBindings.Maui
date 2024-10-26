@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using BlazorBindings.Maui;
+using Microsoft.Extensions.Logging;
 
 namespace NewApp;
 
